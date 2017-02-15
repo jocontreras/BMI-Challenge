@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>BMI Challenge</title>
+   <link rel="stylesheet" href="./css/styles.css">
     <script src="src/Person.js"></script>
     <script src="src/BMICalculator.js"></script>
     <script src='https://code.jquery.com/jquery-2.1.4.js'></script>
@@ -10,29 +11,33 @@
 
   </head>
   <body>
+    <center>
+      <div class = "box">
+        <h1>BMI Calculator</h1>
+        <h3>Select a method to Compute BMI</h3>
+       <section class = "sec_box">
+          <form>
+            <input type="radio" name="system" value="metric" checked id="metric_radio"> Metric&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="system" value="imperial" id="imperial_radio"> Imperial<br>
+          </form>
+        </section>
 
-    </script>
+        <section class="sec_box">
+          <form>
+            Enter value for weight:</br>
+            <input type="text" id="weight" placeholder="Weight"></br>
+          </br>Enter value for height:</br>
+            <input type="text" id="height" placeholder="Height"></br>
+            <input type="button" id="calculate" value="Calculate"></br></br>
+          </form>
 
-    <form>
-      <div>
-      <input type="text" id="weight" placeholder="Weight"></br></br>
-    </div>
 
-    <div>
+            <span id="display_value"></span>
+            <span id="display_message"></span>
 
-      <input type="text" id="height" placeholder="Height"></br></br>
-   </div>
-
-  <div>
-      <input type="button" id="calculate" value="Calculate"></br></br>
- </div>
-    </form>
-
-    <div>
-      <span id="display_value"></span>
-      <span id="display_message"></span>
-    </div>
-
+        </section>
+      </div>
+    </center>
   </body>
 
 </html>
