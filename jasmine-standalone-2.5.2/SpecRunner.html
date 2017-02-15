@@ -10,15 +10,23 @@
   <script src="lib/jasmine-2.5.2/jasmine.js"></script>
   <script src="lib/jasmine-2.5.2/jasmine-html.js"></script>
   <script src="lib/jasmine-2.5.2/boot.js"></script>
+  <script src='https://code.jquery.com/jquery-2.1.4.js'></script>
+ <script>
+   $.holdReady(true);
+ </script>
+ <script src="lib/jasmine-jquery.js"></script>
 
   <!-- include source files here... -->
   <script src="src/Person.js"></script>
   <script src="src/BMICalculator.js"></script>
+  <script src="src/BMIUi.js"></script>
+
 
   <!-- include spec files here... -->
   <script src="spec/SpecHelper.js"></script>
   <script src="spec/PersonSpec.js"></script>
   <script src="spec/BMICalculatorSpec.js"></script>
+  <script src="spec/BMIUiSpec.js"></script>
 
 </head>
 
