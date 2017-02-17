@@ -21,7 +21,7 @@ describe("BMICalculator", function() {
 
   describe ("Calculates BMI using imperial method", function(){
       beforeEach(function(){
-        person = new Person({weight: 140, height_feet: 5, height_inches: 0});
+        person = new Person({weight: 140, height_feet: 5, height_inches: 2});
         calculate = new BMICalculator();
       });
 

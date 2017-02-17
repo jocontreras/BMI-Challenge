@@ -20,8 +20,21 @@ describe("Person", function() {
   expect(person.bmiValue).toEqual(26.01)
 });
 
-it("should have a BMI Message", function() {
+ it("should have a BMI Message", function() {
   person.calculate_bmi();
   expect(person.bmiMessage).toEqual("Overweight")
 });
+
+  describe("Person's BMI using Imperial Method", function() {
+  var person;
+
+  beforeEach(function() {
+    person = new Person({weight_imperial: 140, height_feet: 5, height_inches: 2, method: "imperial"});
+  });
+
+  it("should have a BMI message", function() {
+    person.calculate_bmi();
+    expect(person.bmiMessage).toEqual("Overweight")
+  });
+
 });

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BMI Challenge</title>
+   <link rel="stylesheet" href="./css/styles.css">
+    <script src="src/Person.js"></script>
+    <script src="src/BMICalculator.js"></script>
+    <script src='https://code.jquery.com/jquery-2.1.4.js'></script>
+    <script src="src/BMIUi.js"></script>
+
+  </head>
+  <body id="bgpicture">
+    <center>
+      <div class = "box">
+        <h1>BMI Calculator</h1>
+        <h3>Select a method to Compute BMI</h3>
+
+        <section class = "sec_box">
+          <form action="" id="bmi_menu" >
+            <table  align="center" width="60%"">
+              <tr>
+                <td><input type="radio" name="method" value="metric" checked id="metric_radio"> Metric</td>
+                <td><input type="radio" name="method" value="imperial" id="imperial_radio"> Imperial</td>
+            </tr>
+            </table>
+          </form>
+        </section>
+
+        <section id="metric_data">
+          <form id="metric_frm">
+            Enter Weight in kilograms:<br>
+            <input type="number" id="weight" placeholder="Weight"><br>
+            Enter Height:<br>
+            <input type="number" id="height" placeholder="Height"><br>
+          </form>
+        </section>
+        <section id = "imperial_data">
+          <form id = "imperial_frm">
+            Enter Weight in pounds:<br>
+            <input type="number" id="weight_imperial" placeholder="Weight"><br>
+            Enter Height in Feet:<br>
+            <input type="number" id="height_feet" placeholder="Feet"><br>
+            Enter Height in Inches:<br>
+            <input type="number" id="height_inches" placeholder="Inches">
+          </form>
+        </section>
+        <section>
+          <form>
+            <input type="button" id="calculate" value="Calculate">
+          </form>
+        </section>
+
+        <div class = "sec_box">
+          <span id="display_value"></span>
+          <span id="display_message"></span>
+        </div>
+      </div>
+    </body>
+  </html>
