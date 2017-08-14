@@ -35,5 +35,5 @@ Divide the figure from step 1 by the figure in step 2. The resulting number is y
 
 ## Sample Run
 <br>
-<img src = "https://github.com/jocontreras/BMI-Challenge/images/index_page.png" />
+<img src = "https://github.com/jocontreras/BMI-Challenge/update_readme/images/index_page.png" />
 <br>
