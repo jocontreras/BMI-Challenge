@@ -41,7 +41,7 @@ Testing with Jasmine
 ## Sample Run
 Visit my Github Page: https://jocontreras.github.io/BMI-Challenge/
 
-## Screen Shots:
+## Screenshots:
 
 ### Homepage: 
 Enables the user to select Metric or Imperial method in calculating their BMI.
